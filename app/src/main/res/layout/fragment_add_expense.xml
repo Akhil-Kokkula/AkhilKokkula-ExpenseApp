@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".AddExpenseFragment">
+
+    <TextView
+        android:id="@+id/expenseNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Expense Name: "
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/setExpenseName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/expenseAmtTV"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Amount: "
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/setExpenseAmt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/categorySelectTV"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category: "
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/category_spinner2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/category_array"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/dateSelectTV"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date: "
+        android:padding="8dp" />
+
+    <DatePicker
+        android:id="@+id/date_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="402dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/addExpenseBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:padding="8dp"/>
+
+</LinearLayout>

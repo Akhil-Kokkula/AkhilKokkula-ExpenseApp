@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".UpdateExpenseFragment">
+
+    <TextView
+        android:id="@+id/expenseNameTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Expense Name: "
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/updateExpenseName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/expenseAmtTV2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Amount: "
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/updateExpenseAmt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/categorySelectTV2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Category: "
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/update_category_spinner2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/category_array"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/dateSelectTV2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Date: "
+        android:padding="8dp" />
+
+    <DatePicker
+        android:id="@+id/update_date_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="402dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/updateExpenseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Expense"
+        android:padding="8dp"/>
+
+</LinearLayout>

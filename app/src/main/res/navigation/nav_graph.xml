@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/expenseListFragment">
+
+    <fragment
+        android:id="@+id/expenseListFragment"
+        android:name="com.example.akhilkokkula_expenseapp.ExpenseListFragment"
+        android:label="ExpenseListFragment"
+        tools:layout="@layout/fragment_expense_list" >
+        <action
+            android:id="@+id/action_expenseListFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseListFragment_to_updateExpenseFragment"
+            app:destination="@id/updateExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseListFragment_to_categorizedListFragment"
+            app:destination="@id/categorizedListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="com.example.akhilkokkula_expenseapp.AddExpenseFragment"
+        android:label="fragment_add_expense"
+        tools:layout="@layout/fragment_add_expense" >
+        <action
+            android:id="@+id/action_addExpenseFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateExpenseFragment"
+        android:name="com.example.akhilkokkula_expenseapp.UpdateExpenseFragment"
+        android:label="fragment_update_expense"
+        tools:layout="@layout/fragment_update_expense" >
+        <action
+            android:id="@+id/action_updateExpenseFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categorizedListFragment"
+        android:name="com.example.akhilkokkula_expenseapp.CategorizedListFragment"
+        android:label="fragment_categorized_list"
+        tools:layout="@layout/fragment_categorized_list" >
+        <action
+            android:id="@+id/action_categorizedListFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
+    </fragment>
+
+
+</navigation>
